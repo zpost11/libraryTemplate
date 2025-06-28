@@ -6,12 +6,12 @@
             "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
-                "-g",
+                "-c",
                 "${file}",
-                "-I",
-                "${workspaceFolder}/Submodules/libraryTemplate",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.a"
+                "${fileDirname}\\${fileBasenameNoExtension}.a",
+                "-I",
+                "${workspaceFolder}\\"
             ],
             "options": {
                 "cwd": "${fileDirname}"
